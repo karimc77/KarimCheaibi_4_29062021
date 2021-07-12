@@ -91,7 +91,8 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    /*background: url("img/texture-paper.png"); COMPRESS IMG WEBP*/
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -133,7 +134,10 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    /* Changement de couleurs 
+    color: #333; au lieu de 
+    color: rgba(255, 255, 255, .6); */
+    color: #333;
 }
 
 .d-bloc .a-btn:hover,
@@ -195,7 +199,10 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
+    /* color: #0000009c; au lieu de 
     color: rgba(0, 0, 0, .5);
+    */
+    color: #0000009c;
 }
 
 .d-bloc .panel button:hover,
@@ -283,14 +290,29 @@ a:hover {
     padding-left: 0;
 }
 
+/* Suppression
 #bloc-1-hero h1 {
     font-size: 32px;
-}
+}*/
+
 
 .navbar {
     margin-bottom: 0;
     z-index: 1;
 }
+
+/* A Rajouter 
+img.center-block.image-resize-mode {
+    width: auto;
+    height: auto;
+}
+*/
+
+img.center-block.image-resize-mode {
+    width: auto;
+    height: auto;
+}
+
 
 .navbar-brand {
     height: auto;
@@ -302,9 +324,18 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
+    /*max-height: 200px;*/
     margin: 0 5px 0 0;
     display: inline;
+
+    width: 100%;
+    object-fit: contain;
+    height: 45px;
+/* Rajout
+    width: 100%;
+    object-fit: contain;
+    height: 45px;
+*/
 }
 
 .navbar-brand img[src$=svg] {
@@ -325,7 +356,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -572,8 +603,21 @@ a[data-lightbox]:hover img {
 }
 
 #lightbox-modal .modal-dialog img {
-    max-height: 90vh;
+    /*max-height: 90vh;
+    margin: 0 auto;*/
+
+    max-height: 60vh;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
     margin: 0 auto;
+/* Rajout
+    max-height: 60vh;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+*/
 }
 
 .lightbox-caption {
@@ -609,14 +653,28 @@ a[data-lightbox]:hover img {
 
 .next-lightbox,
 .prev-lightbox {
-    font-size: 20px;
+    /*font-size: 20px;
     color: rgba(255, 255, 255, .9);
     background: rgba(0, 0, 0, .5);
     transition: all .2s ease-in-out;
     position: absolute;
     top: 45%;
     z-index: 1;
-    opacity: 0.4;
+    opacity: 0.4;*/
+/* Rajout
+    font-size: 20px;
+    background: #fff;
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+*/
+    font-size: 20px;
+    background: #fff;
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 45%;
+    z-index: 1;
 }
 
 .next-lightbox {
@@ -639,7 +697,8 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
+/* Modification Propriétés Police et Weight */
+/*h1,
 h2,
 h3,
 h4,
@@ -653,18 +712,103 @@ a {
     font-weight: 400;
     color: #575757!important;
 }
+*/
 
+/* Remplacer par celles ci-dessous
+h1,
+h3,
+h4,
+h5,
+h6,
+label,
+.btn,
+a {
+    font-family: "helvetica";
+    font-size:1.2rem;
+    font-weight:400;
+    color: #575757!important;
+}
+h1 {
+    font-size: 4.8rem;
+    font-weight:400;
+    font-family: "Open Sans";
+}
+h2{
+    font-family: "helvetica";
+    font-size: 2.4rem;
+    line-height: 1.4em;
+    font-weight:400;
+    color:#FFF!important;
+}
+
+h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333!important;
+}
+p{
+    font-family: "helvetica";
+    font-weight:600;
+    font-size: 1.8rem;
+}
+
+*/
+
+h1,
+h3,
+h4,
+h5,
+h6,
+label,
+.btn,
+a {
+    font-family: "helvetica";
+    font-size:1.2rem;
+    font-weight:400;
+    color: #575757!important;
+}
+h1 {
+    font-size: 4.8rem;
+    font-weight:400;
+    font-family: "Open Sans";
+}
+h2{
+    font-family: "helvetica";
+    font-size: 2.4rem;
+    line-height: 1.4em;
+    font-weight:400;
+    color:#FFF!important;
+}
+
+h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333!important;
+}
+p{
+    font-family: "helvetica";
+    font-weight:600;
+    font-size: 1.8rem;
+}
+
+/* Suppression propriété CSS
 .container {
     max-width: 1000px;
 }
+*/
 
 .hero-bloc-text {
     font-size: 38px;
 }
 
+
+/* Suppression propriété CSS
 .hero-bloc-text-sub {
     font-size: 36px;
 }
+*/
 
 .statement-bloc-text {
     line-height: 26px;
@@ -676,19 +820,26 @@ a {
     margin: auto auto auto auto;
 }
 
+
+/* Suppression propriété CSS
 p {
     font-size: 11px;
 }
+*/
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
 }
 
+
+/* Suppression propriété CSS
 .h1 {
     font-size: 20px;
     font-family: "Open Sans";
 }
+*/
+
 
 .cta-hero {
     margin-top: 22px;
@@ -704,6 +855,8 @@ p {
     margin: auto auto auto auto;
 }
 
+
+/* Suppression propriété CSS
 h2 {
     font-size: 22px;
     line-height: 1.4em;
@@ -715,6 +868,8 @@ h3 {
     font-weight: 700;
     color: #333333!important;
 }
+*/
+
 
 .med-width-whitespace {
     max-width: 800px;
@@ -722,8 +877,20 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
+
+/* Modification Propriété CSS
 h1 {
+    color: #fff!important;
+    text-align: center; au lieu de
+    
     color: #333333!important;
+}
+*/
+
+h1 {
+    
+    color: #fff!important;
+    text-align: center;
 }
 
 h4 {
@@ -735,8 +902,16 @@ h4 {
     margin-top: 24px;
 }
 
+
+/* Modification Propriété CSS
 .white {
-    color: #FFFFFF!important;
+    color: #0e0d0d!important; au lieu de 
+
+    color: #FFFFFF!important;    
+}
+*/
+.white {
+    color: #0e0d0d!important;
 }
 
 .portfolio-thumb {
@@ -752,9 +927,33 @@ h4 {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
+
+/* Rajout Propriété CSS
+.keywords{
+color:rgb(17, 15, 15);
+font-size: 1.9rem;
+text-align: center;
+}
+*/
+
+.keywords {
+    color:rgb(17, 15, 15);
+    font-size: 1.9rem;
+    text-align: center;
+    
+}
+
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+    /*padding: 40px 40px 40px 40px;*/
+    padding-left: 2%;
+    padding-right: 2%;
+
+/* Remplacer  padding: 40px 40px 40px 40px;
+par :
+    padding-left: 2%;
+    padding-right: 2%;
+*/
 }
 
 .bold-link {
@@ -774,17 +973,52 @@ h4 {
     background-color: #F3976C;
 }
 
-.tc-white {
-    /* color: #F3976C!important; Changement de couleurs */
-    color: black!important;
+.tc-white {    
+/* Modification propriété CSS
+    color: #F3976C!important; Changement de couleurs
+    color: black!important; -- 
+Mettre :
+    color: #fff!important;
+    font-weight:700;
+*/
+    color: #fff!important;
+    font-weight:700;
 }
 
 .btn-atomic-tangerine {
+    /*background: #fff; au lieu de 
     background: #F3976C;
-    color: #FFFFFF!important;
+    */
+    background: #fff;
+    color: #000!important;
 }
 
+/* Suppression proprieté CSS
+color: #FFFFFF!important;
+*/    
+
+
+/* Rajout propriété CSS
+.btn-atomic-tangerine {
+    background: #fff;
+    color: #000!important;
+}
+*/
+
+/* Modification propriété CSS 
 .btn-atomic-tangerine:hover {
+    background: #000!important;
+    color: #FFFFFF!important;
+}
+*/
+
+.btn-atomic-tangerine:hover {
+    /* Mettre background: #000!important;
+              color: #FFFFFF!important; au lieu de 
+
+              background: #c27956!important;
+              color: #FFFFFF!important;
+    */
     background: #c27956!important;
     color: #FFFFFF!important;
 }
@@ -810,6 +1044,9 @@ h4 {
     border-color: #364577!important;
 }
 
+
+/* Modification IMG COMPRESS WEBP
+
 .bg-dots-bg {
     background-image: url("img/dots-bg.png");
 }
@@ -825,6 +1062,25 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
+*/
+
+.bg-dots-bg {
+    background-image: url("img/dots-bg.webp");
+}
+
+.bg-lines-h2-bg {
+    background-image: url("img/lines-h2-bg.webp");
+}
+
+.bg-banniere {
+    background-image: url("img/la-chouette-agence-banniere.webp");
+}
+
+.bg-presentation {
+    background-image: url("img/image-de-presentation.webp");
+}
+
+/********* FIN DES MODIFICATIONS ********/
 
 @media (max-width: 1024px) {
     .bloc {
