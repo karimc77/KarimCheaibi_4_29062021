@@ -1080,6 +1080,19 @@ color: #FFFFFF!important;
     background-image: url("../img/image-de-presentation.webp");
 }
 
+
+.network {
+    margin-right: 20px;
+    margin-top: 15px;
+    color:#000;
+}
+
+.network2 {
+    margin-left: 15px;
+    margin-top: 15px;
+    color:#000;
+}
+
 /********* FIN DES MODIFICATIONS ********/
 
 /*  Suppression des @media query ***
